@@ -1,0 +1,244 @@
+.container{
+    padding: 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.p_image{
+    text-align: center;
+    border: 2px solid black;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p_image img{
+    width: 200px;
+    object-fit: "cover"; 
+}
+.p_info{
+    width: 100%;
+    padding: 0.7rem;
+
+}
+.info_value{
+    margin-top: 10px;
+}
+.info_name{
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+.info_desc{
+    margin-top: 5px;
+    font-size: 1rem;
+    padding: 0px;
+}
+.value_desc{
+    width: 100%;
+    text-align: left;
+}
+.info_price{
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.quantity{
+  width: 30%;
+}
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+.counter span{
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+.counter p{
+    border: 1px solid black;
+    padding: 0.2em;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 3px;
+}
+.info_stock{
+    font-size: 0.7rem;
+    margin-top: 5px;
+}
+
+.buttons{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    margin-top: 10px;
+    padding-bottom: 0.4rem;
+}
+.buttons button{
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.img_cart{
+    margin: 0 auto;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 3px;
+
+}
+.img_cart img{
+    width: 20px;
+}
+@media (max-width: 1200px) and (min-width: 600px) {
+    .container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .p_image{
+        width: 60%;
+    }
+    .p_info{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+        width: 80%;
+    }
+    .info_name {
+        background-color: transparent;
+        color: black;
+        text-align: left;
+    }
+    .info_price{
+        margin-top: 50px;
+    }
+    .info_desc{
+        margin-top: 0px;
+        font-size: 1.2rem;
+    }
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin-right: 115px;
+        margin-top: -40px;
+    }
+    .img_cart{
+        margin-left: 0px;
+        width: 60%;
+    }
+}
+
+@media (min-width:1200px) {
+    .container{
+        margin-top: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap:40px;
+        padding: 2rem;
+       
+    }
+    .p_image{
+        width: 40%;
+        height: 410px;
+        margin-left: 100px;
+        border: none;
+        border-right: 2px solid black;
+        border-radius: 0px;
+    }
+    .p_image img{
+        width: 300px;
+        object-fit: cover;
+    }
+    .p_info{
+        display: flex;
+        flex-direction: column;
+        margin-top: -120px;
+        width: 50%;
+        padding: 0px;
+    }
+    .info_name {
+        background-color: transparent;
+        color: black;
+        text-align: left;
+    }
+    .info_price{
+        margin-top: 80px;
+        width: 70%;
+    }
+    .info_desc{
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        margin-right: 340px;
+        margin-top: -90px;
+
+    }   
+    .img_cart{
+        margin-left: 0px;
+        width: 45%;
+        margin-top: -10px;
+        cursor: pointer;
+    }
+    button{
+        cursor: pointer;
+    }
+
+    .counter span{
+        cursor: pointer;
+        display: block;
+        width: 15%;
+        background-color: black;
+        color: white;
+        padding: 0.3rem;
+        text-align: center;
+        border-radius: 3px;
+        font-size: 0.8rem;
+    }
+    .counter p{
+        border: 1px solid black;
+        padding: 0.2em;
+        width: 30%;
+        text-align: center;
+        background-color: rgb(224, 224, 224);
+        border-radius: 3px;
+    }
+}

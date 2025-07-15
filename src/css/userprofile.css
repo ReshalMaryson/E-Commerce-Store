@@ -1,0 +1,318 @@
+.profile_container{
+padding: 0.2rem;
+display: block;
+}
+.uesr_dp{
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid black;
+}
+.uesr_dp img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+}
+.edit_dp{
+    position: absolute;
+    bottom: 5%;
+    right:32%;
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 100px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+}
+.profile_status{
+    color: red;
+    font-size: 0.7rem;
+    margin-top: 10px;
+    display: none;
+}
+.user_info{
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.4rem;
+}
+.profile_controls{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    gap: 10px;
+    cursor: pointer;
+}
+.profile_controls button{
+    background-color: black;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.2rem;
+    border: none;
+    border-radius: 3px;
+}
+.profile_infoheading{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.profilecontent{
+    margin: 0 auto;
+    padding: 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(2,140px);
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.profileitem{
+    font-size: 0.8rem;
+}
+.email_p{
+width: 100%;
+word-wrap: break-word;    
+}
+.value{
+margin-top: 3px;
+}
+/* updatebox */
+.updateuserinfo{
+    background-color: white;
+    width: 100%;
+    display: none;
+}
+.updateuserinfo .updateheading{
+    font-size: 1.1rem;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.updateuserinfo input{
+    border: 1px solid black;
+    width: 100%;
+    padding: 0.1rem;
+    margin-left: 0px;
+    margin-top: 3px;
+}
+.updateuserinfo p{
+    font-size: 0.7rem;
+}
+.update_textarea{
+    height: 54px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+}
+/* active classes */
+.profile_container.active{
+    display: none;
+}
+.updateuserinfo.active{
+    display: block;
+}
+.profile_status.active{
+    display: block;
+}
+@media (max-width:1200px) and (min-width:600px) {
+ .profile_container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 70px;
+ }   
+
+ .uesr_dp{
+    border: none;
+    border-right: 2px solid black;
+    width:70%;
+    margin-left: 0px;
+ }
+
+ .edit_dp{
+    position: absolute;
+    bottom: 15%;
+    right:13%;
+    background-color: black;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 100px;
+    width: 33px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+}
+ .user_info{
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+ }
+ .profilecontent{
+    margin: 0 auto;
+    padding: 0.4rem;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.updateuserinfo{
+    background-color: white;
+    width: 100%;
+    display: none;
+    margin-top: 60px;
+}
+.update_textarea{
+    text-align: left;
+    padding: 0.1rem;
+    height: 54px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+}
+
+@media (min-width:1200px) {
+    .profile_container{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 70px;
+        margin-left: 0px;
+     }   
+    
+     .uesr_dp{
+        border: none;
+        border-right: 2px solid black;
+        width:30%;
+        height: 340px;
+     }
+
+     .uesr_dp img{
+        width: 280px;
+        height: 280px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 2px solid black;
+    }
+     .edit_dp{
+        position: absolute;
+        bottom: 15%;
+        right:13%;
+        background-color: black;
+        color: white;
+        padding: 0.3rem;
+        border-radius: 100px;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+     .user_info{
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .profilecontent{
+        padding: 0.4rem;
+        display: grid;
+        grid-template-columns: repeat(3,180px);
+        gap:15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 80%;
+        margin-left:0px;
+    }
+    
+    .updateuserinfo{
+        background-color: white;
+        width: 100%;
+        display: none;
+        margin-top: 60px;
+    }
+    .update_textarea{
+        text-align: left;
+        padding: 0.1rem;
+        height: 54px;
+        width: 150px;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+    }
+    .profile_controls{
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .profile_controls button{
+        padding: 0.4rem;
+font-weight: bold;
+    }
+    .profileitem{
+        font-size: 0.9rem;
+    }   
+
+    .edit_dp{
+        position: absolute;
+        bottom: 12%;
+        right:22%;
+        background-color: black;
+        color: white;
+        padding: 0.3rem;
+        border-radius: 100px;
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+    .updateuserinfo{
+        background-color: white;
+        width: 100%;
+        display: none;
+    }
+    .updateuserinfo .profilecontent{
+        margin-left: 40%;
+    }
+    .updateuserinfo .profile_controls{
+        width: 70%;
+        margin-left: 70%;
+    }
+}

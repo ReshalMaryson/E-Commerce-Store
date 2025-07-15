@@ -1,0 +1,87 @@
+.signup-container{
+    margin-top: 30px;
+    padding: 0.3rem;
+    }
+    
+    form h2{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+    }
+    form label{
+    text-align: left;
+    }
+    form input{
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+    }
+    .input_dp{
+font-size: 0.8rem;
+        width: 50%;
+    }
+    .label_dp{
+        margin-left: 50px;
+    }
+    .log-in p {
+    font-size: 0.8rem;  
+      color: black;
+    }
+    .link-login{
+        color: blue;
+        font-size: 0.8rem;
+        margin-left: 5px;
+            }
+    
+            .btn{
+                letter-spacing: 1px;
+            }
+    @media (max-width:1200px) and (min-width:600px) {
+        form h2{
+    width: 110%;
+    
+        }
+        .signup-container{
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            margin: 0 auto;
+            width: 80%;
+            display:  flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 60px;
+        }
+    
+        .sign-up p {
+            font-size: 0.8rem;  
+              color: black;
+            }
+        .link-login{
+            font-size: 0.8rem;
+    color: blue;
+        }
+    }
+    @media (min-width:1200px) {
+    
+        .signup-container{
+            margin-top: -20px;
+            flex-direction: column;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        form{
+            border:none;
+        }
+        form h2{
+            width: 100%;
+        }
+        .btn{
+            width: 20%;
+            letter-spacing: 1px;
+        }
+    }

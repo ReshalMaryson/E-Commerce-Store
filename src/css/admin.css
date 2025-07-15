@@ -1,0 +1,166 @@
+.heading{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family:monospace;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.admin-login{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:0px;
+}
+h2{
+    text-align: center;
+}
+
+.admin-login form{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 45vh;
+    margin-top: -15px;
+}
+
+input{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom:2px solid black;
+    color: black;
+    margin-left: 15px;
+}
+.btn{
+    width:31%;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0.4rem;
+    color: white;
+    background-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+label{
+    font-weight: bold;
+    color: black;
+    font-size: 0.8rem;
+    text-transform:uppercase;
+}
+
+/* admin page content */
+
+.admin-page{
+    display: block;
+    margin-top: 20px;
+}
+.admin-page .heading{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+.controls{
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+    padding: 0.7rem;
+}
+.controls button{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.show_users,.show_products,.add_products{
+    display: none;
+}
+.show_sales{
+    display: none;
+}
+
+/* active classes */
+.show_users.active{
+   display: block;
+}
+
+.show_products.active{
+    display: block;
+}
+
+.add_products.active{
+    display: block;
+}
+.show_sales.active{
+    display: block;
+}
+.btn.active{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase
+};
+
+
+
+
+/* Responsive */
+@media (max-width:1200px) and (min-width:600px) {
+    .admin-login{
+        margin-top: 40px;
+        }
+
+        form{
+            margin-top: 50px;
+            width: 50%;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+            min-height: 30vh;
+        }
+
+        .controls{
+            margin: 0 auto;
+            width: 80%;
+            margin-top: 30px;
+        }
+
+}
+
+@media (min-width:1200px) {
+   
+    .admin-login{
+        margin-top: 20px;
+    }
+   form{
+    margin-top: 50px;
+    width: 40%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    min-height: 30vh;
+   }
+   .controls{
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 30px;
+}
+.controls button{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+}

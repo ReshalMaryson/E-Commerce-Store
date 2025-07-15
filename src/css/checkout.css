@@ -1,0 +1,304 @@
+.check_container{
+    padding: 0.5rem;
+}
+.cartdetails{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+    background-color: rgb(224, 240, 253);
+    border-radius:10px ;
+}
+.cartdetails_total,.cartdetails_totalitems{
+    display: flex;
+    justify-content: space-between;
+}
+.seecart{
+    margin-top: 10px;
+display: flex;
+justify-content: flex-end;
+}
+
+.seecart .seecartlink {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.personal_info{
+    margin-top: 20px;
+}
+.delivery_info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    outline: none;
+    font-size: 0.8rem;
+}
+.delivery_info label{
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 3px;
+}
+.delivery_info select{
+    margin-left: 0px;
+    width: 100%;
+    background-color: white;
+    padding: 0.1rem;
+    color: black;
+    border: none;
+    outline:none;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+    margin-top: 1px;
+}
+.delivery_info select option{
+    background-color: white;
+    border-radius:10px ;
+    font-family: sans-serif;
+}
+.info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    outline: none;
+    font-size: 0.8rem;
+}
+.info label{
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 3px;
+}
+.info input{
+    margin-left: 2px;
+    width: 100%;
+    background-color: white;
+    padding: 0.1rem;
+    color: black;
+    border: none;
+    outline:none;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+    margin-top: 1px;
+}
+.info span{
+    font-size: 0.5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.562);
+}
+
+.paymehtod_heading{
+    margin-top: 40px;
+}
+.paymentmethod{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.paymentcod{
+    display: flex;
+}
+.paymentnow{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 20px;
+    transition: all 200ms ease-in-out;
+}
+.paymentmethod label{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-left: 3px;
+    padding: 0.2rem;
+    width: 15%;
+    text-align: center;
+}
+.paymentnow select{
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: white;
+    padding: 0.1rem;
+    color: black;
+    border: none;
+    outline:none;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius:5px ;
+}
+
+.billingaddress{
+    display: none;
+    transition: all 200ms ease-in;
+}
+.billingaddress input{
+    margin-left: 2px;
+    width: 100%;
+    background-color: white;
+    padding: 0.1rem;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.219);
+    border-radius: 5px;
+    outline:none;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0px;
+    margin-top: 1px;
+}
+.bill_Add_heading{
+    font-size: 0.9rem;
+}
+
+.summary_heading{
+    margin-top: 40px;
+}
+
+.summary {
+    background-color: rgb(224, 240, 253);
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem;
+    background-color: rgb(224, 240, 253);
+    border-radius:10px ;
+    margin-top: 10px;
+}
+
+.subtotal{
+    font-size: 1.1rem;
+}
+.completeorder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    padding-bottom: 0.3rem;
+}
+.completeorder button{
+    background-color: black;
+    width: 80%;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    outline:none;
+    border-radius:8px;
+}
+.emptycart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap:10px;
+}
+.link_emptycart{
+    width: 20%;
+}
+.emptycart_btn{
+    background-color: black;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    outline:none;
+    border: none;
+    border-radius:8px;
+}
+/* active classes */
+.paymentnow.active{
+    height: 50px;
+    transition: all 200ms ease-in;
+}
+.COD.active{
+    background-color:black ;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    padding: 0.2rem;
+    transition: all 200ms ease-in;
+    font-size: 0.8rem;
+}
+
+.CARD.active{
+    background-color:black ;
+    border-radius: 3px;
+    outline: none;
+    color: white;
+    padding: 0.2rem;
+    transition: all 200ms ease-in;
+    font-size: 0.8rem;
+}
+
+.billingaddress.active{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    transition: all 200ms ease-in;
+}
+@media (max-width: 1200px)and (min-width:600px) {
+    .check_container{
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 20px;
+    
+    }
+    .completeorder{
+        margin: 0 auto;
+        width: 50%;
+        margin-top: 20px;
+    }
+}
+@media (min-width:1200px) {
+    .check_container{
+        margin: 0 auto;
+        width: 70%;
+        margin-top: 20px;
+    }
+    .cartdetails{
+    width: 50%;
+    font-size:1rem;
+    }
+    
+    .cart_totalwrap,.cart_totalitemswrap{
+        font-size: 2rem;
+    }
+.COD,.CARD{
+    cursor: pointer;
+}
+    .summary {
+        width: 60%;
+    }
+    .completeorder{
+        margin: 0 auto;
+        width: 30%;
+        margin-top: 20px;
+    }
+
+}

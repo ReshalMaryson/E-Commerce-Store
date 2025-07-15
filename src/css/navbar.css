@@ -1,0 +1,425 @@
+
+body {
+  padding-top: 90px; 
+}
+.wrap_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white; /* or any color */
+  z-index: 1000; /* Ensures it stays above other content */
+
+}
+.p_login{
+  font-size: 0.8rem;
+}
+header {
+  text-align: center;
+  height: 4.5rem;
+  border-bottom: 2px solid black;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  position: relative;
+}
+
+.logo_link{
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+  width: 40%;
+  height: 70%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo_text{
+  text-align: center;
+  font-size: 1.2rem;
+  /* margin-top: 15px; */
+}
+.logo{
+  width: 60px;
+}
+
+.loginwrapper{
+    position: relative;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top:80px;
+    height: 170px;
+}
+
+
+.logintrue{
+  margin: 0 auto;
+    border: 2px solid black;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 80%;
+    overflow: hidden;
+    margin-top:20px;
+    margin-left: 20px;
+  text-align: center;
+  z-index: 1000;
+}
+.userprofile{
+    width: 53px;
+    margin-top: 40px;
+}
+
+.user_controls{
+    position: absolute;
+    top:40px;
+    background-color: black;
+    width: 100%;
+    font-size: 0.6rem;
+    width: 100%;
+    border-radius: 6%;
+    visibility: hidden;
+    opacity: 0%;
+    width: 100%;
+    margin-left: 5px;
+  transition:  all 200ms ease-in ;
+}
+
+
+.user_controls ul{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:9px;
+    cursor: pointer;
+}
+.user_controls ul li {
+    list-style: none;
+    width: 100%;
+    margin-top: 5px;
+    color: white;
+    padding: 0.2rem;
+    cursor: pointer;
+    
+}
+header img {
+  margin-bottom: 30px;
+  width: 90px;
+}
+.login {
+  border: none;
+}
+.login p {
+  border: none;
+  color: black;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+}
+
+.open_menu {
+  padding: 0.5rem;
+  margin-top: -13px;
+  display: flex;
+  justify-content:space-between;
+  width: 95%;
+}
+
+.open {
+  margin-top: 4px;
+  width: 30px;
+  height: 27px;
+}
+
+.cart_box{
+  position: relative;
+  z-index: 1000;
+  text-align: center;
+}
+.cart_box img{
+  width: 30px;
+}
+.cart_total_items{
+  position: absolute;
+  right: -45%;
+  top: 40%;
+  background-color: black;
+  color: white;
+  padding: 0.2rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+text-align: center;
+}
+
+.cart_con{
+display: none;
+}
+
+.close {
+  display: block;
+  visibility: hidden;
+}
+
+.menu {
+  visibility: hidden;
+  position: absolute;
+  transition: all 500ms ease-in-out;
+  left: -500px;
+}
+
+.arrow-back {
+  position: absolute;
+  width: 30px;
+  top: 20px;
+  right: 15px;
+}
+
+.menu ul {
+  margin-top: 150px;
+  width: 90%;
+  padding: 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+  font-weight: bold;
+  margin-bottom: 300px;
+}
+
+.menu ul li {
+  list-style: none;
+  font-size: 1.7rem;
+  color: black;
+}
+
+
+/* active classes */
+.user_controls.active{
+    visibility: visible;
+    opacity: 100%;
+    top:80px;
+    transition:  all  200ms ease-out;
+    z-index: 1000;
+}
+.cart_box.active{
+  z-index: 0;
+}
+
+.open_menu.active {
+    display: none;
+  }
+
+.menu.active {
+    position: absolute;
+    width: 80%;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: 2px solid black;
+    visibility: visible;
+    top:10%;
+    left: 0px;
+    background-color: white;
+    height: 100vh;
+    transition: all 500ms ease-in-out;
+    z-index: 1000;
+  }
+
+  .close.active {
+    display: block;
+    visibility: visible;
+    /* margin-right: 375px; */
+    transform: rotate(360deg);
+    transition: 1200ms;
+  }
+
+.cart_con.active{
+display: block;
+border: 1px solid red;
+position: absolute;
+right: 2%;
+top: 20%;
+z-index: 1000;
+overflow: auto; 
+width: 360px;
+height: 300px;
+background-color: white;
+
+}
+/* Responsive */
+@media (max-width: 1200px) and (min-width: 600px) {
+  header {
+    font-size: 2rem;
+    height: 6rem;
+    border: 1px solid black;
+    gap: 240px;
+    padding: 0.4rem;
+  }
+
+  .logo_link{
+    width: 40%;
+margin-left: 280px;
+  }
+  header .logo {
+    width: 95px;
+  }
+ .p_login{
+  font-size: 1rem;
+ }
+  .login {
+    text-align: left;
+    width: 11%;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+  }
+
+  .open_menu {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    visibility: visible;
+    top: 0px;
+    left: 10%;
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    padding: 0.4rem;
+    height: 2rem;
+  }
+
+  .arrow-back {
+    display: none;
+  }
+  .menu ul {
+    position: absolute;
+    bottom: -290px;
+    display: flex;
+    flex-direction: row;
+    width: 55%;
+  }
+
+  .menu ul li {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    padding-top: 70px; /* Adjust this based on your header height */
+  }
+  .wrap_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white; /* or any color */
+    z-index: 1000; /* Ensures it stays above other content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a slight shadow */
+  }
+  header {
+    font-size: 2rem;
+    height: 4.5rem;
+    border: 1px solid black;
+    gap: 470px;
+    padding: 0.2rem;
+  }
+  .logo_link{
+    margin: 0 auto;
+    width: 10%;
+    margin-left: 43%;
+  }
+.logo {
+    width: 74px;
+  }
+  .p_login{
+    font-size: 0.9rem;
+  }
+  .loginwrapper{
+    height: 100px;
+    margin-top: 3px;
+  }
+  .login {
+    text-align: center;
+    width: 11%;
+    font-size: 1.2rem;
+    padding-left: 0.3rem;
+    cursor: pointer;
+  }
+.user_controls{
+  top:13px;
+  right: -50px;
+}
+  .user_controls.active{
+    visibility: visible;
+    opacity: 100%;
+    top:15px;
+    right:20px;
+    transition:  all  200ms ease-out;
+}
+.logintrue{
+  margin-left: 66px;
+}
+
+  .user_controls ul li{
+    cursor: pointer;
+  }
+
+  .open_menu {
+    display: none;
+  }
+
+  .menu {
+    border: none;
+    position: relative;
+    visibility: visible;
+    /* margin-left: 1010px; */
+    width: 98%;
+    left: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 0px;
+    padding: 0.4rem;
+    height: 4.5rem;
+    margin-top: 10px;
+  }
+
+  .arrow-back {
+    display: none;
+  }
+  .menu ul {
+    position: absolute;
+    bottom: -270px;
+    display: flex;
+    flex-direction: row;
+    width: 28%;
+  }
+
+  .menu ul li {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}

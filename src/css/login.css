@@ -1,0 +1,85 @@
+.login-container{
+margin-top: 55px;
+padding: 0.3rem;
+}
+
+.link-create{
+    color: blue;
+    font-size: 0.8rem;
+        }
+form h2{
+background-color: black;
+color: white;
+text-transform: uppercase;
+width: 100%;
+}
+form label{
+text-align: left;
+}
+form input{
+text-align: left;
+margin-left: 20px;
+}
+
+.sign-up p {
+font-size: 0.8rem;  
+  color: black;
+}
+.context{
+    display: none;
+}
+
+@media (max-width:1200px) and (min-width:600px) {
+    form h2{
+width: 110%;
+
+    }
+    .login-container{
+        border-left: 2px solid black;
+        border-right: 2px solid black;
+        margin: 0 auto;
+        width: 80%;
+        display:  flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .sign-up p {
+        font-size: 0.8rem;  
+          color: black;
+        }
+    .link-create{
+        font-size: 0.8rem;
+color: blue;
+    }
+
+    .context{
+        display:  none;
+    }
+}
+@media (min-width:1200px) {
+
+    .login-container{
+        margin-top: -20px;
+        flex-direction: column;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        border:none;
+    }
+    form h2{
+        width: 100%;
+    }
+    .btn{
+        width: 20%;
+    }
+    .context{
+        display: none;
+    }
+}
