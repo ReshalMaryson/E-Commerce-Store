@@ -17,14 +17,14 @@ function sendmail($receiver_email, $receiver_fname, $receiver_lname, $body)
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'reshalmaryson000@gmail.com';
+        $mail->Username = 'SENDER_EMAIL';
         $mail->Password = 'gycm mcaa fqip lukd';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
         // Email Details
-        $mail->setFrom('reshalmayson000@gmail.com', 'Reshal Maryson');
-        $mail->addAddress($receiver_email, $receviername);
+        $mail->setFrom('SENDER_EMAIL', 'SENDER_NAME);
+        $mail->addAddress( $receiver_email,$receviername);
         $mail->Subject = 'Order Confirmation';
         $mail->Body = $body;
 
