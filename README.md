@@ -1,13 +1,30 @@
-<<<<<<< HEAD
-# E-Commerce-Store
-E Commerce Shopping Website
-=======
-# React + Vite
+# 🛒 E-Commerce Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured e-commerce store built using **React** for the frontend, **PHP OOP (Core PHP)** for the backend, and **MySQL** for the database.  
+Includes features like a dynamic **shopping cart**, a robust **admin panel**, and **email support using PHPMailer**.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> c3c484c (Initial-Deploy E-Commerce-Store)
+## 🚀 Features
+- 🛍️ Product catalog with categories & search
+- 🛒 Shopping cart (add, update, remove)
+- 👨‍💼 Admin panel (manage products, orders, users)
+- 📧 Email functionality using **PHPMailer**
+- 🔐 Authentication (Login/Register)
+- 🧑‍💻 Tech Stack: React + PHP OOP + MySQL
+
+
+## 🧰 Tech Stack
+
+| Frontend | Backend | Database | Email |
+|----------|---------|----------|-------|
+| React    | PHP (OOP) | MySQL  | PHPMailer |
+
+
+## 🧪 How to Run Locally
+
+⚛️ React Frontend Setup (Client)
+- cd <root_folder>
+- npm install
+- npm start
+
+🐘 PHP Backend Setup (Server)
