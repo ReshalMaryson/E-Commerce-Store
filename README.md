@@ -23,12 +23,35 @@ Includes features like a dynamic **shopping cart**, a robust **admin panel**, an
 ## 🧪 How to Run Locally
 
 ⚛️ React Frontend Setup (Client)
-- cd <root_folder>
-- npm install
-- npm start
-- 
 
-🐘 PHP Backend Setup (Server)
+### ⚛️ React Frontend Setup
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/ReshalMaryson/E-Commerce-Store.git
+    cd E-Commerce-Store
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+
+    Your app will be running at:
+    👉 http://localhost:3000
+
+4. Make sure the backend (`/backend`) is also running on your local server  
+   (via XAMPP or similar) so the frontend can access APIs.
+
+
+
+
+##🐘 PHP Backend Setup (Server)
 
 1. Start your local server** (XAMPP or MAMP):
    - Make sure both **Apache** and **MySQL** are running.
@@ -61,7 +84,7 @@ Includes features like a dynamic **shopping cart**, a robust **admin panel**, an
 
    Here’s how the connection works (already set for XAMPP):
 
-    ```php
+    ```php PDO connetion String
     $this->conn = new PDO("mysql:host=localhost;dbname=shopping_store;", "root", "");
     ```
 
