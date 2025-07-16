@@ -20,9 +20,7 @@ Includes features like a dynamic **shopping cart**, a robust **admin panel**, an
 | React    | PHP (OOP) | MySQL  | PHPMailer |
 
 
-## 🧪 How to Run Locally
-
-⚛️ React Frontend Setup (Client)
+### 🧪 How to Run Locally
 
 ### ⚛️ React Frontend Setup
 1. Clone the repository:
@@ -51,7 +49,9 @@ Includes features like a dynamic **shopping cart**, a robust **admin panel**, an
 
 
 
-##🐘 PHP Backend Setup (Server)
+
+
+### 🐘 PHP Backend Setup (Server)
 
 1. Start your local server** (XAMPP or MAMP):
    - Make sure both **Apache** and **MySQL** are running.
