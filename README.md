@@ -95,6 +95,8 @@ Includes features like a dynamic **shopping cart**, a robust **admin panel**, an
      ```
      http://localhost/backend/public/
      ```
+     Admin-passowrd -> admin123
+     user-pasowrd -> user's name+123 (admin123)
 
    You should see the working API or homepage depending on your setup.
 
